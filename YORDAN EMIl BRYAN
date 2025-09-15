@@ -1,0 +1,10 @@
+def doubles(num):
+    result = num * 2
+    return result
+
+n = 2
+counter = 1
+while counter < 4:
+    print(doubles(n))
+    n += n
+    counter += 1
