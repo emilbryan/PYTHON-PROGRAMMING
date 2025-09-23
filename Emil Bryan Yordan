@@ -1,0 +1,569 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "f0c1be17-e39c-4b80-b39f-f8895064c974",
+   "metadata": {},
+   "source": [
+    "# Review Question 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "94887be7-8ffc-41e0-ae5c-0a2054d89b6e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Result for #1\n",
+      "True\n",
+      "False\n",
+      "True\n",
+      "True\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Result for #1\")\n",
+    "print(1 <= 1)\n",
+    "print(1 != 1)\n",
+    "print(1 != 2)\n",
+    "print(\"good\" != \"bad\")\n",
+    "print(\"good\" != \"Good\")\n",
+    "print(123 == \"123\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "cde77df8-2a9e-44d0-b5c3-14f4b4d9abc6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Result for #2\n",
+      "True\n",
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Result for #2\")\n",
+    "print(3<4)\n",
+    "print(10>5)\n",
+    "print(\"jack\" != \"jill\")\n",
+    "print(42 != \"42\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fc65379f-58d9-426f-a64d-3a64d6e37ba5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Result for #2\n",
+      "True\n",
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Result for #2\")\n",
+    "print(3<4)\n",
+    "print(10>5)\n",
+    "print(\"jack\" != \"jill\")\n",
+    "print(42 != \"42\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "9a99f05f-2391-461a-bed1-b1d00899d457",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = False == (not True)\n",
+    "b = (True and False) == (True and False)\n",
+    "c = not (True and (\"A\" == \"B\"))\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "36142f34-e9dc-4469-b8fc-57d8e89b3f7a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "False\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = (1 <= 1) and (1 != 1)\n",
+    "b = not (1 != 2)\n",
+    "c = (\"good\" != \"bad\") or False\n",
+    "d = (\"good\" != \"Good\") and not (1 == 1)\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)\n",
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "45f397cf-a2c7-4ab6-a3c0-f9b18d8e75b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "True\n",
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = False == (not True)\n",
+    "b = (True and False) == (True and False)\n",
+    "c = not (True and (\"A\" == \"B\"))\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "2c8fde68-31d6-41ed-9e50-b924a66ef673",
+   "metadata": {
+    "jupyter": {
+     "source_hidden": true
+    }
+   },
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word: 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The word \"5\" has less than 5 characters!\n"
+     ]
+    }
+   ],
+   "source": [
+    "str_inp = input(\"Enter a word:\")\n",
+    "if len(str_inp) < 5:\n",
+    "    print(f'The word \"{str_inp}\" has less than 5 characters!')\n",
+    "elif len(str_inp) > 5:\n",
+    "    print(f'The word \"{str_inp}\" has greater than 5 characters!')\n",
+    "else:\n",
+    "    print(f'The word \"{str_inp}\" has 5 characters!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1a6741e7-450f-43bd-8781-2231b4b623ef",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:New folder]",
+   "language": "python",
+   "name": "conda-env-New_folder-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
+
+
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "d95af200-630e-4ef5-9f7f-744585b08cea",
+   "metadata": {},
+   "source": [
+    "# Review Question"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "21e4d295-f0fb-47f7-98af-5d9c7e12d804",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word: python is the future\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The word \"python is the future\" has greater than 5 characters!\n"
+     ]
+    }
+   ],
+   "source": [
+    "str_inp = input(\"Enter a word:\")\n",
+    "if len(str_inp) < 5:\n",
+    "    print(f'The word \"{str_inp}\" has less than 5 characters!')\n",
+    "elif len(str_inp) > 5:\n",
+    "    print(f'The word \"{str_inp}\" has greater than 5 characters!')\n",
+    "else:\n",
+    "    print(f'The word \"{str_inp}\" has 5 characters!')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "063eec57-b491-4ecd-9642-f33cde183dd4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a word/character: p\n",
+      "Enter a word/character: y\n",
+      "Enter a word/character: t\n",
+      "Enter a word/character: h\n",
+      "Enter a word/character: o\n",
+      "Enter a word/character: n\n",
+      "Enter a word/character: Queen\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You have successfully exited the loop!\n"
+     ]
+    }
+   ],
+   "source": [
+    "flag = False\n",
+    "while not flag:\n",
+    "    user_inp = input(\"Enter a word/character:\")\n",
+    "    for char in user_inp:\n",
+    "        if char == 'q' or char == 'Q':\n",
+    "            flag = True\n",
+    "\n",
+    "print(\"You have successfully exited the loop!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3b01d84f-b9c6-41eb-9d20-ff26707d2f40",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "4\n",
+      "5\n",
+      "7\n",
+      "8\n",
+      "10\n",
+      "11\n",
+      "13\n",
+      "14\n",
+      "16\n",
+      "17\n",
+      "19\n",
+      "20\n",
+      "22\n",
+      "23\n",
+      "25\n",
+      "26\n",
+      "28\n",
+      "29\n",
+      "31\n",
+      "32\n",
+      "34\n",
+      "35\n",
+      "37\n",
+      "38\n",
+      "40\n",
+      "41\n",
+      "43\n",
+      "44\n",
+      "46\n",
+      "47\n",
+      "49\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in range(1, 50):\n",
+    "    if not (num % 3 == 0):\n",
+    "        print(num)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "4a86535f-dda7-4532-9381-69e41a51d1ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: Python\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: p\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: h\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: t\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: \n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: o\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: n\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Not an integer, Try Again!\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer: 90\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "You inputted: \"90\"!\n"
+     ]
+    }
+   ],
+   "source": [
+    "while True:\n",
+    "    try:\n",
+    "        user_inp = int(input(\"Enter an integer:\"))\n",
+    "        print(f'You inputted: \"{user_inp}\"!')\n",
+    "        break;\n",
+    "    except ValueError:\n",
+    "        print(\"Not an integer, Try Again!\")\n",
+    "        continue;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a19d82e6-7191-4d94-ace7-76105a69bd8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter a string: Bryan\n",
+      "Enter an integer: 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Number is out of bounds!\n"
+     ]
+    }
+   ],
+   "source": [
+    "user_in = input(\"Enter a string:\")\n",
+    "while True:\n",
+    "    try:\n",
+    "        n = int(input(\"Enter an integer:\"))\n",
+    "        if n > len(user_in) or n <= 0:\n",
+    "            print(\"Number is out of bounds!\")\n",
+    "            continue\n",
+    "        break;\n",
+    "    except ValueError:\n",
+    "        print(\"Not an Integer, Try Again!\")\n",
+    "        continue;\n",
+    "\n",
+    "print(f'The character at index {n} is \"{user_in[n]}\"!')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "31887639-4532-4f10-bf26-c6ac47fb70d8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:New folder]",
+   "language": "python",
+   "name": "conda-env-New_folder-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
